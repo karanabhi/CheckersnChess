@@ -36,32 +36,23 @@ By turning in this assignment, I agree by the academic honor code and declare th
 
 Figure \ref{fig: Game_Tree} shows a Game Tree.
 
-
 \end{enumerate}
 \section*{Problem 2}
 
 \begin{enumerate}[label=(\alph*)]
-  \item 
-function AND-OR-GRAPH-SEARCH(problem) returns a conditional plan, or failure 
-OR-SEARCH(problem.INITIAL-STATE, problem, [ ])
-function OR-SEARCH(state, problem, path) returns a conditional plan, or failure
-if problem.GOAL-TEST(state) then return the empty plan
-if state is on path then return failure
-for each action in problem.ACTIONS(state) do
-plan AND-SEARCH(RESULTS(state, action), problem, [state | path])
-if plan 6= failure then return [action | plan]
-return failure
-function AND-SEARCH(states, problem, path) returns a conditional plan, or failure
-for each s(i) in states do:\\
-plan(i) OR-SEARCH(s(i), problem, path)
-if plan(i) = failure then return failure
-return [if s1 then plan1
-else if s2 then plan2
-else if s(n1) then plan(n)1
-else plan(n)]
-\\\\
-For slippery world, the graph shows corresponding conditions of going sucking one
-or both the blocks in AND.For erratic world, the graph shows AND condition of stay-
-ing back or moving to the next block.
+  \item Refer to the Git repository below.
+
+  \item Refer to the Git repository below.
+
+ \item An improved sort at any depth will exponentially reduce the total number of positions searched. It Increases the likelihood that the best move is searched first on the last (and most expensive) iteration.
+
 \end{enumerate}
+
+\section*{Problem 3}
+\begin{enumerate}[label=(\alph*)]
+
+ \item Refer to the Git repository below.\\\\
+Git repository.\url {https://github.com/karanabhi/CheckersnChess}
+\end{enumerate}
+
 \end{document}
